@@ -15,6 +15,7 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/Chart.min.js"></script>
     <script src="./js/hoda.js"></script>
+    <script src="./js/scroll.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
   </head>
   <body>
@@ -98,20 +99,4 @@
     </div>
   </body>
 
-  <script>
-    // btnをクリックするとスクロール移動
-    function fnMove(seq) {
-      var offset = $("#div" + seq).size() ? $("#div" + seq).offset() : 0;
-      $("html, body").animate({ scrollTop: offset.top }, 400);
-    }
-
-    // btnをクリックするとclass追加
-    $(document).on("click", "button", function (e) {
-      e.preventDefault(); // 基本的に定義されたイベントを作動させないメソッド
-      // .siblings()オブジェクトと同じ位置にあるすべてのオブジェクト(自分以外の兄弟要素)を検索するメソッド
-      $(this).addClass("active").siblings().removeClass("active");
-
-      fnMove($(this).data("n"));
-    });
-  </script>
 </html>
