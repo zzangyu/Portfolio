@@ -10,13 +10,13 @@ html,body,footer {
 .header {
   display: flex;
   position: fixed;
+  align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   height: 85px;
-  align-items: center;
-  justify-content: center;
   background-color: rgba(255, 255, 255, 0.451);
   font-weight: bold;
   font-size: 22px;
@@ -29,7 +29,7 @@ html,body,footer {
   border: none;
   border-radius: 10%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .header button:hover {
   cursor: pointer;
@@ -57,7 +57,32 @@ html,body,footer {
 /* ーーーーーーーHOMEーーーーーーー */
 #div1 {
   background-color: #bde0fe84;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%; 
+  font-weight: bold;
 }
+.typing-txt{
+  display: none;
+}
+.typing-txt ul{
+  list-style:none;
+}
+.typing {
+  font-size: 40px;
+  display: inline-block;
+  animation-name: cursor;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes cursor{ 
+  0%{border-right: 1px solid #fff} 
+  50%{border-right: 1px solid #000} 
+  100%{border-right: 1px solid #fff} 
+}
+
 
 /* ーーーーーーーABOUT MEーーーーーーー */
 #div2 {
@@ -161,24 +186,6 @@ html,body,footer {
   width: 100%;
   height: 90%;
 }
-
-/* ーーーーーーーCONTACTーーーーーーー */
-/* #wrap #div5 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #bde0fe84;
-}
-#wrap #div5 button {
-  justify-content: end;
-}
-::-webkit-scrollbar {
-  display: none;
-}
-#fst_content {
-  margin-top: 100px;
-} */
 
 /* ーーーーーーーfooterーーーーーーー */
 footer {

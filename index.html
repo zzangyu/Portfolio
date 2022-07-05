@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/skills.css" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
@@ -17,18 +20,76 @@
     <script src="./js/hoda.js"></script>
     <script src="./js/scroll.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      $(document).ready(function () {
+        /*타이핑 애니메이션*/
+        var typingBool = false;
+        var typingIdx = 0;
+        var liIndex = 0;
+        var liLength = $(".typing-txt>ul>li").length;
+
+        // 타이핑될 텍스트를 가져오기
+        var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
+        typingTxt = typingTxt.split(""); // 한글자씩 자름.
+
+        if (typingBool == false) {
+          // 타이핑이 진행되지 않았다면
+          typingBool = true;
+
+          var tyInt = setInterval(typing, 100); // 반복동작
+        }
+
+        function typing() {
+          if (typingIdx < typingTxt.length) {
+            // 타이핑될 텍스트 길이만큼 반복
+            $(".typing").append(typingTxt[typingIdx]); // 한글자씩 이어준다.
+            typingIdx++;
+          } else {
+            //한문장이끝나면
+            //다음문장으로.. 마지막문장이면 다시 첫번째 문장으로
+
+            if (liIndex >= liLength - 1) {
+              liIndex = 0;
+            } else {
+              liIndex++;
+            }
+
+            //다음문장을 타이핑하기위한 셋팅
+            typingIdx = 0;
+            typingBool = false;
+            typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
+
+            //다음문장 타이핑전 1초 쉰다
+            clearInterval(tyInt);
+            setTimeout(function () {
+              $(".typing").html("");
+              tyInt = setInterval(typing, 100);
+            }, 1000);
+          }
+        }
+      });
+    </script>
   </head>
   <body>
     <div id="wrap">
+      <!-- header -->
       <header class="header">
-        <button onclick="fnMove('1')">HOME</button>
-        <button onclick="fnMove('2')">ABOUT ME</button>
-        <button onclick="fnMove('3')">SKILLS</button>
-        <button onclick="fnMove('4')">PROJECT</button>
-        <!-- <button onclick="fnMove('5')">CONTACT</button> -->
+          <button onclick="fnMove('1')">HOME</button>
+          <button onclick="fnMove('2')">ABOUT ME</button>
+          <button onclick="fnMove('3')">SKILLS</button>
+          <button onclick="fnMove('4')">PROJECT</button>
       </header>
       <!-- home -->
-      <div id="div1" class="contents"></div>
+      <div id="div1" class="contents">
+        <div class="typing-txt">
+          <ul>
+            <li>Welcome To</li>
+            <li>My Portfolio Web Site</li>
+            <li>Designed by ChanGyu</li>
+          </ul>
+        </div>
+        <p class="typing"></p>
+      </div>
 
       <!-- about me -->
       <div id="div2" class="contents">
@@ -84,11 +145,7 @@
           </a>
         </div>
       </div>
-      <!-- contact -->
-      <!-- <div id="div5" class="contents">
-        CONTACT
-        <button onclick="fnMove('1')">HOME</button>
-      </div> -->
+
       <!-- footer -->
       <footer id="div5">
         <div>
@@ -98,5 +155,4 @@
       </footer>
     </div>
   </body>
-
 </html>
