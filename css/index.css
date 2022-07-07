@@ -166,7 +166,7 @@ html,body,footer {
   line-height: 50px;
 }
 
-/* ーーーーーーーPORTFOLIOーーーーーーー */
+/* ーーーーーーーPROJECTーーーーーーー */
 #div4 {
   display: flex;
   justify-content: center;
@@ -180,17 +180,18 @@ html,body,footer {
   color: #ffd60a;
   cursor: pointer;
 }
-#yt_project {
+.project {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 33%;
-  height: 33%;
+  height: 40%;
   border: 3px solid #bde0fe84;
 }
-#div4 img {
-  width: 100%;
-  height: 90%;
+.project img {
+  width: 500px;
+  height: 250px;
+  border-bottom: 3px solid #bde0fe84;
 }
 
 /* ーーーーーーーfooterーーーーーーー */
