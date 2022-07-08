@@ -9,8 +9,7 @@
  HTML CSS JAVASCIPTを活用して作った就職活動ためのポートフォリオサイトです。
 
 
-!(https://github.com/zzangyu/Portfolio/blob/main/image/portfolio.PNG)
-!(https://github.com/zzangyu/Portfolio/blob/main/image/p2.PNG)
-!(https://github.com/zzangyu/Portfolio/blob/main/image/p3.PNG)
-!(https://github.com/zzangyu/Portfolio/blob/main/image/p4.PNG)
-
+<img src="https://github.com/zzangyu/Portfolio/blob/main/image/portfolio.PNG"/>&nbsp 
+<img src="https://github.com/zzangyu/Portfolio/blob/main/image/p2.PNG"/>&nbsp
+<img src="https://github.com/zzangyu/Portfolio/blob/main/image/p3.PNG"/>&nbsp
+<img src="https://github.com/zzangyu/Portfolio/blob/main/image/p4.PNG"/>&nbsp
