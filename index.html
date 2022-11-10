@@ -74,9 +74,8 @@
       <header class="header">
           <button onclick="fnMove('1')">HOME</button>
           <button onclick="fnMove('2')">ABOUT ME</button>
-          <button onclick="fnMove('3')">SKILLS</button>
-          <button onclick="fnMove('4')">PROJECT</button>  
-          <button onclick="fnMove('5')">CONTACT</button>  
+          <button onclick="fnMove('3')">1st PROJECT</button>
+          <button onclick="fnMove('4')">2nd PROJECT</button>
       </header>
       <!-- home -->
       <div id="div1" class="contents">
@@ -92,63 +91,46 @@
 
       <!-- about me -->
       <div id="div2" class="contents">
-        <div id="card">
-          <img src="image/私.jpg" />
-          <div class="info_wrap" style="line-height: 1em; margin-top: 4%; padding-right: 3%;">
-            <div class="user_info">苗字：韓　　[ハン]</div>
-            <div class="user_info">名前：燦奎　[チャンギュ]</div>
-            <div class="user_info">年齢：27歳　[平成7年1月7日生まれ] </div>
-            <div class="user_info">教育機関：Global-In　令和4年03月29日 ~ 令和4年10月13日</div>
-            <div class="user_info">学歴：GACHON大学　食品生物工学学科　令和3年卒業</div>
-            <div class="user_info">2018年10月除隊</div>
-            <div class="user_info">パスポート期限は2028年10月までです。</div>
-            <div class="user_info">ビザはありません。</div>
-            <div class="user_info">
-              Github：
-              <a href="https://github.com/zzangyu">
-              https://github.com/zzangyu
-              </a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <!-- skill -->
-      <div id="div3" class="contents">
-        <div class="wrap">
-          <div><h3>My Skill Level</h3></div>
-          <div id="info">
-            Global-InというIT研修機関で8ヶ月の研修を受けながら培ったスキルです。<br />
-            今後はバックエンド系の開発の業務に携わり、少しずつ専門性を高めていきたいと思っています。<br />
-            レベルは1から5まで決めてあります。<br />
-          </div>
-          <div id="skillSetDiv">
-            <canvas id="programmingSkillSet"></canvas>
-          </div>
-          <div id="level"><!-- スキルのレベル -->
-            <span style="color: rgb(240, 183, 183)">1-Beginner　</span>
-            <span style="color: rgb(243, 159, 159)">2-Mediocre　</span>
-            <span style="color: rgb(239, 125, 125)">3-Intermediate　</span>
-            <span style="color: rgb(239, 102, 102)">4-Advanced　</span>
-            <span style="color: rgb(234, 53, 53)">5-Expert</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- project -->
-      <div id="div4" class="contents">
-        <div class="project"id="project1"  style="margin-right: 10px;">
-          <img src="image/youtube4.PNG" alt="" />
-            <a href="https://zzangyu.github.io/Project_Youtube/" target=”_blank”>
-              <div>
-                Youtube coding page
+        <div>
+          <div id="watasi_box">
+            <div id="me_info">
+            <div id="about_me">About me</div>
+            <div>
+              <div>      
+                <p>
+                  <span>'Global-In'</span>という韓国のIT研修機関を修了(令和4年03月29日 ~ 令和4年10月13日)しました。
+                  機関でJAVA・Servlet・JSP・SPRING・DataBase・HTML・CSS・Javascript等のスキルを習得しました。
+                  スキルのレベルアップのために私が行ってきた旅行先をお勧めするサイト、チームプロジェクトとして、Google Map apiを使って旅行のプランを立てられるように手伝うサイトを作りました。今後も自分の成長のために絶えず努力しようと思います。
+                </p>
+                <div class="git">- 資格: 日本語能力試験一級・普通自動車第一種免許・情報処理技術(筆記だけ)</div>
+                <div class="git">- GitHub: <a href="https://github.com/zzangyu" target="_blank">https://github.com/zzangyu</a></div>
               </div>
-            </a>
-          <div>
-            使った技術 - HTML&CSS JAVASCRIPT
+            </div>
+          </div>
+          <div class="wrap">
+            <h3>My Skill Level</h3>
+            <div id="skillSetDiv">
+              <canvas id="programmingSkillSet"></canvas>
+            </div>
+            <div id="level"><!-- スキルのレベル -->
+              <span style="color: rgb(240, 183, 183)">1-Beginner　</span>
+              <span style="color: rgb(243, 159, 159)">2-Mediocre　</span>
+              <span style="color: rgb(239, 125, 125)">3-Intermediate　</span>
+              <span style="color: rgb(239, 102, 102)">4-Advanced　</span>
+              <span style="color: rgb(234, 53, 53)">5-Expert</span>
+            </div>
           </div>
         </div>
+      </div>
+      </div>
+
+      <!-- 1st PROJECT -->
+      <div id="div3" class="contents">
+
+      </div>
+
+      <!-- 2nd PROJECT -->
+      <div id="div4" class="contents">
         <div class="project" id="project2">
           <img src="image/team_project.PNG" alt="" />
               <div style="margin-top: 5px;">
@@ -170,14 +152,6 @@
           </div>
         </div>
       </div>
-
-      <!-- footer -->
-      <footer id="div5">
-        <div>
-          <span>Han Changyu +82-10-4140-5191</span>
-          <span>メール：hellohan95@gmail.com</span>
-        </div>
-      </footer>
     </div>
   </body>
 </html>

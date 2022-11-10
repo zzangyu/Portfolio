@@ -1,7 +1,7 @@
 // btnをクリックするとスクロール移動
 function fnMove(seq) {
     var offset = $("#div" + seq).size() ? $("#div" + seq).offset() : 0;
-    $("html, body").animate({ scrollTop: offset.top }, 400);
+    $("html, body").animate({ scrollTop: offset.top }, 600);
   }
 
 // btnをクリックするとclass追加
