@@ -187,6 +187,9 @@ html,body,footer {
 #level {
   line-height: 50px;
 }
+#level2 {
+  display: none;
+}
 @media screen and (max-width:1050px) {
   #div2 {
     height: 160% !important; 
@@ -215,7 +218,7 @@ html,body,footer {
     color: #ffffff;
   }
   #div2 {
-    height: 180% !important; 
+    height: 190% !important; 
   }
   #about_me {
     margin-bottom: 80px;
@@ -224,6 +227,12 @@ html,body,footer {
     position: absolute;
     bottom: 10%;
     right: 40%;
+  }
+  #level {
+    display: none;
+  }
+  #level2 {
+    display: block;
   }
 }
 @media screen and (max-width:320px) {
