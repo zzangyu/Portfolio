@@ -21,6 +21,7 @@ html,body,footer {
   background-color: rgba(255, 255, 255, 0.451);
   font-weight: bold;
   font-size: 18px;
+  z-index: 1;
 }
 .header button {
   font-size: 1em;
@@ -87,7 +88,6 @@ html,body,footer {
   position: absolute;
   bottom: 10%;
   right: 50%;
-  z-index: -1;
 }
 #div1_bt button {
   background-color: rgba(255, 255, 255, 0);
@@ -202,7 +202,7 @@ html,body,footer {
     flex-direction: column;
   }
 }
-@media screen and (max-width:320px) {
+@media screen and (max-width:400px) {
   .header {
     background-color: #bde0fe;
   }
@@ -215,7 +215,7 @@ html,body,footer {
     color: #ffffff;
   }
   #div2 {
-    height: 220% !important; 
+    height: 180% !important; 
   }
   #about_me {
     margin-bottom: 80px;
@@ -226,7 +226,11 @@ html,body,footer {
     right: 40%;
   }
 }
-
+@media screen and (max-width:320px) {
+  #div2 {
+    height: 220% !important; 
+  }
+}
 /* ーーーーーーー1st PROJECTーーーーーーー */
 #div3 {
   display: flex;
