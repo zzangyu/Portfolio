@@ -1,0 +1,69 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.previous, .next{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 20px 5px;
+  color: #3c376f;
+  font-size: 1.5rem;
+}
+#left_bt {
+    display: flex;
+    flex-direction: row-reverse;
+}
+button span {
+  position: relative;
+  display: inline-block;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+.previous:hover span {
+  transform: translateX(-10px) scale(1.2);
+}
+.next:hover span {
+  transform: translateX(10px) scale(1.2);
+}
+.slider-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.slider img {
+  max-width: 470px;
+  height: 300px;
+  display: none;
+}
+img.active {
+  display: block;
+  animation: fadeImg 0.8s;
+}
+.arrow {
+  flex: 0 0 15%;
+  display: flex;
+  flex: 2;
+  text-align: center;
+}
+.slider-nav span {
+  display: block;
+  width: 100%;
+}
+
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

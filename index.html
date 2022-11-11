@@ -6,11 +6,15 @@
 
     <title>ポートフォリオ</title>
 
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/skills.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/slider.css">
+  
     <script src="https://kit.fontawesome.com/e14a2b80fa.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
@@ -82,7 +86,7 @@
         <div class="typing-txt">
           <ul>
             <li>환영합니다 !</li>
-            <li>ようこそ !</li>
+            <li id="jp">ようこそ !</li>
             <li>Welcome !</li>
             <li>Designed by hanzzan</li>
           </ul>
@@ -153,32 +157,82 @@
 
       <!-- 1st PROJECT -->
       <div id="div3" class="contents">
-
+        <div>
+          <div id="div3_title">ここはどう？</div>
+          <div id="div3_date">2022.07 (1人 個人プロジェクト)</div>
+          <div id="div3_info_wrap">
+            <div id="imgSlider">
+              <div class="container">
+                <div class="slider">
+                  <img class="active" src="./image/project1_1.PNG">
+                  <img class="sd_img" src="./image/project1_2.PNG">
+                  <img class="sd_img" src="./image/project1_3.PNG">
+                  <img class="sd_img" src="./image/project1_4.PNG">
+                  <img class="sd_img" src="./image/project1_5.PNG">
+                  <img class="sd_img" src="./image/project1_6.PNG">
+                  <img class="sd_img" src="./image/project1_7.PNG">
+                </div>
+                <nav class="slider-nav">
+                  <ul>
+                    <li id="left_bt" class="arrow">
+                      <button class="previous">
+                        <span><i class="fa-solid fa-arrow-left"></i></span>
+                      </button>
+                    </li>
+                    <li class="arrow">
+                      <button class="next">
+                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                      </button>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div id="project1_info">
+              <div id="project1_info_1">
+                <span>私が行ってきた旅行の中で良かった四つの国を選んでお勧めの所、食べ物、ルートをまとめて情報を書いておいたウェブサイトです。</span>
+                <br><br>
+                IT研修機関でフロントアンド技術を習った後、復習と実力増進のために個人的にウェブサイトを作りました。<br>
+                <span class="span_red">フロントアンド</span>にもう少し慣れたきっかけになっただけではなく、
+                <span class="span_red">デザイン</span>についても深く考えることができたプロジェクトでした。
+              </div>
+              <div class="project_kinou">
+                  <div class="project_kinou_1">✔&nbsp;&nbsp;機能</div>
+                  <div class="project_kinou_2">
+                    日本・フランス・スイス・イタリアの有名なこと紹介<br>
+                    私が行ったとき撮った写真がSlide機能で見れる<br>
+                    動画機能はまだ具現できなかったので修正が必要
+                  </div>
+              </div>
+              <div class="project_github">
+                <div class="project_github_1">✔&nbsp;&nbsp;GitHub</div>
+                <div class="project_github_2">
+                  <a href="https://github.com/zzangyu/memory_repository" target="_blank">https://github.com/zzangyu/memory_repository</a>
+                </div>
+              </div>
+              <div class="project_url">
+                <div class="project_url_1">✔&nbsp;&nbsp;URL</div>
+                <div class="project_url_2">
+                  <a href="https://zzangyu.github.io/memory_repository/home.html" target="_blank">https://zzangyu.github.io/memory_repository/home.html</a>
+                </div>
+              </div>
+              <div class="project_fontend">
+                <div class="project_fontend_1">✔&nbsp;&nbsp;Frontend</div>
+                <div class="project_fontend_2">HTML, CSS, JAVASCRIPT, JQUERY</div>
+              </div>
+              <div class="project_tool">
+                <div class="project_tool_1">✔&nbsp;&nbsp;Tool</div>
+                <div class="project_tool_2">Visual Studio Code</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- 2nd PROJECT -->
       <div id="div4" class="contents">
-        <div class="project" id="project2">
-          <img src="image/team_project.PNG" alt="" />
-              <div style="margin-top: 5px;">
-                チームプロジェクト(HOSTING is not yet)
-              </div>
-          <div style="margin-top: 5px;">
-            使った技術 - JAVA JSP HTML&CSS JAVASCRIPT
-          </div>
-        </div>
-        <div class="project" id="project3">
-          <img src="image/memoryHome.PNG" alt="" />
-            <a href="https://zzangyu.github.io/memory_repository/" target="_blank">
-              <div>
-                海外旅行の思い出の記録サイト
-              </div>
-            </a>
-          <div>
-            使った技術 - HTML&CSS JAVASCRIPT
-          </div>
-        </div>
       </div>
     </div>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
