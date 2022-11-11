@@ -378,6 +378,7 @@ html,body,footer {
   #div2 {
     height: 160% !important; 
     justify-content: none;
+    padding-bottom: 20px;
   }
   #about_me {
     margin-bottom: 80px;
