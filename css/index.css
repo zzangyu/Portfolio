@@ -376,7 +376,7 @@ html,body,footer {
   }
   /* div2 */
   #div2 {
-    height: 140% !important; 
+    height: 150% !important; 
     justify-content: none;
   }
   #about_me {
@@ -405,6 +405,24 @@ html,body,footer {
     padding: 1rem 1rem;
     width: 85%;
     margin-top: 30px;
+  }
+}
+@media screen and (max-width:380px) {
+  /* div2 */
+  #div2 {
+    height: 190% !important;
+  }
+  #wrap #div2 .wrap {
+    padding: 0 2% 10% 1%;
+  }
+
+  /* div3 */
+  #div3_title {
+    font-size: 1.9rem;
+  }
+  .slider img {
+    width: 250px !important;
+    height: 200px !important;
   }
 }
 @media screen and (max-width:320px) {
