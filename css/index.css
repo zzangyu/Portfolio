@@ -96,9 +96,12 @@ html,body,footer {
   border: 3px solid #999;
   border-radius: 50%;
 }
+#div1_bt button:hover {
+  cursor: pointer;
+  border: 3px solid rgb(101, 101, 101);
+}
 .bounce {
-  /* 크롬 */
-  animation: bounce 3s infinite ease-out;
+  animation: bounce 1s infinite ease-out;
 }
 @keyframes bounce {
   0% {
