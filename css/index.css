@@ -469,8 +469,6 @@ html,body,footer {
 #footer_2_text {
   position: absolute;
   z-index: 1;
-  float: right;
-  right: 15%;
   height: 70px;
   line-height: 70px;
   color: black;
@@ -561,7 +559,7 @@ html,body,footer {
   }
   /* footer */
   #footer_1 {
-    padding: 0 10%;
+    padding: 20% 10% 0 10%;
   }
   .project_kinou_2, .project_github_2, .project_fontend_2, .project_Backend_2, .project_api_2, .project_Database_2, .project_tool_2, .project_url_2 {
     display: block;
