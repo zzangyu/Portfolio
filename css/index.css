@@ -557,10 +557,6 @@ html,body,footer {
   .slider3 img {
     width: 300px;
   }
-  /* footer */
-  #footer_1 {
-    padding: 20% 10% 0 10%;
-  }
   .project_kinou_2, .project_github_2, .project_fontend_2, .project_Backend_2, .project_api_2, .project_Database_2, .project_tool_2, .project_url_2 {
     display: block;
     width: 100%;
@@ -633,6 +629,10 @@ html,body,footer {
     padding: 1rem 1rem;
     width: 85%;
     margin-top: 30px;
+  }
+  /* footer */
+  #footer_1 {
+    padding: 20% 10% 0 10%;
   }
 }
 @media screen and (max-width:380px) {
