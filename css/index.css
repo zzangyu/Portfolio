@@ -295,6 +295,47 @@ html,body,footer {
   float: left;
   margin-top: 6px;
 }
+/* ーーーーーーー3rd PROJECTーーーーーーー */
+#div5 {
+  height: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bde0fe84;
+  padding-bottom: 100px;
+}
+#div5 > div {
+  width: 57.5%;
+  height: auto;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 3rem;
+  margin-top: 100px;
+  box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.064);
+}
+#div5_title {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  font-family: "Hannari";
+}
+#div5_date {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6c757d;
+  text-align: center;
+  opacity: .8;
+}
+#div5_info_wrap {
+  display: flex;
+  margin-top: 60px;
+}
+#imgSlider3 {
+  float: left;
+  margin-top: 6px;
+}
 
 /*ㅡㅡㅡㅡㅡㅡㅡ반응형ㅡㅡㅡㅡㅡㅡㅡ*/
 @media screen and (max-width:1400px) {
@@ -317,6 +358,18 @@ html,body,footer {
     align-items: center;
   }
   #imgSlider2 {
+    float: none;
+  }
+  #project1_info {
+    margin-left: 0;
+  }
+  /* div5 */
+  #div5_info_wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #imgSlider3 {
     float: none;
   }
   #project1_info {
@@ -345,6 +398,10 @@ html,body,footer {
   }
   /* div4 */
   .slider2 img {
+    width: 300px;
+  }
+  /* div5 */
+  .slider3 img {
     width: 300px;
   }
   .project_kinou_2, .project_github_2, .project_fontend_2, .project_Backend_2, .project_api_2, .project_Database_2, .project_tool_2, .project_url_2 {
@@ -408,6 +465,19 @@ html,body,footer {
     width: 85%;
     margin-top: 30px;
   }
+  /* div5 */
+  .slider3 img {
+    width: 300px;
+    height: 200px !important;
+  }
+  #div5 {
+    padding-bottom: 30px;
+  }
+  #div5 > div {
+    padding: 1rem 1rem;
+    width: 85%;
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width:380px) {
   /* div2 */
@@ -417,7 +487,6 @@ html,body,footer {
   #wrap #div2 .wrap {
     padding: 0 2% 10% 1%;
   }
-
   /* div3 */
   #div3_title {
     font-size: 1.9rem;
@@ -426,12 +495,20 @@ html,body,footer {
     width: 250px !important;
     height: 200px !important;
   }
-  
+
   /* div4 */
   #div4_title {
     font-size: 1.9rem;
   }
   .slider2 img {
+    width: 250px !important;
+    height: 200px !important;
+  }
+  /* div5 */
+  #div5_title {
+    font-size: 1.9rem;
+  }
+  .slider3 img {
     width: 250px !important;
     height: 200px !important;
   }
@@ -449,9 +526,13 @@ html,body,footer {
     width: 250px !important;
     height: 200px !important;
   }
-
   /* div4 */
   .slider2 img {
+    width: 250px !important;
+    height: 200px !important;
+  }
+  /* div5 */
+  .slider3 img {
     width: 250px !important;
     height: 200px !important;
   }
