@@ -84,36 +84,7 @@ html,body,footer {
   50%{border-right: 1px solid #000} 
   100%{border-right: 1px solid #fff} 
 }
-#div1_bt {
-  position: absolute;
-  bottom: 10%;
-  right: 50%;
-}
-#div1_bt button {
-  background-color: rgba(255, 255, 255, 0);
-  width: 70px;
-  height: 70px;
-  border: 3px solid #999;
-  border-radius: 50%;
-}
-#div1_bt button:hover {
-  cursor: pointer;
-  border: 3px solid rgb(101, 101, 101);
-}
-.bounce {
-  animation: bounce 1s infinite ease-out;
-}
-@keyframes bounce {
-  0% {
-    bottom: 150px;
-  }
-  50% {
-    bottom: 120px;
-  }
-  100% {
-    bottom: 150px;
-  }
-}
+
 
 /* ーーーーーーーABOUT MEーーーーーーー */
 #div2 {
@@ -136,7 +107,7 @@ html,body,footer {
 }
 #me_info {
   flex: 0.5;
-  padding: 0 1% 0 2%;
+  padding: 0 1% 0 5%;
 }
 #watasi_box div div p {
   line-height: 2rem;
@@ -198,17 +169,17 @@ html,body,footer {
 }
 
 /* ㅡㅡㅡㅡㅡㅡㅡPROJECT COMMONㅡㅡㅡㅡㅡㅡㅡ*/
-.project_kinou, .project_github, .project_fontend, .project_tool, .project_url {
+.project_kinou, .project_github, .project_api_2, .project_fontend, .project_Backend, .project_tool, .project_Database, .project_url {
   margin-bottom: 1rem;
 }
-.project_kinou_1, .project_github_1, .project_fontend_1, .project_tool_1, .project_url_1 {
+.project_kinou_1, .project_github_1, .project_api_1, .project_fontend_1, .project_Backend_1, .project_Database_1, .project_tool_1, .project_url_1 {
   display: inline-block;
   vertical-align: top;
   width: 7rem;
   font-weight: 900;
   font-size: 1rem;
 }
-.project_kinou_2, .project_github_2, .project_fontend_2, .project_tool_2, .project_url_2 {
+.project_kinou_2, .project_github_2, .project_api_2, .project_fontend_2, .project_Backend_2, .project_Database_2, .project_tool_2, .project_url_2 {
   display: inline-block;
   vertical-align: bottom;
   width: -moz-calc(100% - 8rem);
@@ -217,11 +188,11 @@ html,body,footer {
   font-size: 0.8rem;
   word-break:break-all;
 }
-.project_kinou_2 a, .project_github_2 a, .project_fontend_2 a, .project_tool_2 a, .project_url_2 a{
+.project_kinou_2 a, .project_github_2 a, .project_api_2 a, .project_fontend_2 a, .project_Backend_2 a, .project_Database_2 a, .project_tool_2 a, .project_url_2 a{
   text-decoration: none;
   color: black;
 }
-.project_kinou_2 a:hover, .project_github_2 a:hover, .project_fontend_2 a:hover, .project_tool_2 a:hover, .project_url a:hover {
+.project_kinou_2 a:hover, .project_github_2 a:hover, .project_api_2 a:hover, .project_fontend_2 a:hover, .project_Backend_2 a:hover, .project_Database_2 a:hover,  .project_tool_2 a:hover, .project_url a:hover {
   text-decoration: underline;
   color: #999;
 }
@@ -264,6 +235,7 @@ html,body,footer {
 }
 #imgSlider {
   float: left;
+  margin-top: 6px;
 }
 #project1_info {
   margin-left: 50px;
@@ -282,47 +254,47 @@ html,body,footer {
   color: red;
 }
 
-
 /* ーーーーーーー2nd PROJECTーーーーーーー */
 #div4 {
+  height: auto !important;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #bde0fe84;
+  padding-bottom: 100px;
 }
-#div4 a {
-  text-decoration: none;
-  line-height: 25px;
+#div4 > div {
+  width: 57.5%;
+  height: auto;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 3rem;
+  margin-top: 100px;
+  box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.064);
 }
-#div4 a:hover {
-  color: #ffd60a;
-  cursor: pointer;
+#div4_title {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  font-family: "Hannari";
 }
-.project {
+#div4_date {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6c757d;
+  text-align: center;
+  opacity: .8;
+}
+#div4_info_wrap {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30%;
-  height: 40%;
-  border: 3px solid #bde0fe84;
+  margin-top: 60px;
 }
-.project img {
-  width: 100%;
-  height: 100%;
-  border-bottom: 3px solid #bde0fe84;
-  transition: all 0.1s linear;
+#imgSlider2 {
+  float: left;
+  margin-top: 6px;
 }
-.project img:hover {
-  transform: scale(1.1);
-}
-/* .project img {
-  width: 100%;
-  height: 100%;
-  border-bottom: 3px solid #bde0fe84;
-  transition: all 0.1s linear;
-}
-.project img:hover {
-  transform: scale(1.1);
-} */
 
 /*ㅡㅡㅡㅡㅡㅡㅡ반응형ㅡㅡㅡㅡㅡㅡㅡ*/
 @media screen and (max-width:1400px) {
@@ -333,6 +305,18 @@ html,body,footer {
     align-items: center;
   }
   #imgSlider {
+    float: none;
+  }
+  #project1_info {
+    margin-left: 0;
+  }
+  /* div4 */
+  #div4_info_wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #imgSlider2 {
     float: none;
   }
   #project1_info {
@@ -359,7 +343,11 @@ html,body,footer {
   .slider img {
     width: 300px;
   }
-  .project_kinou_2, .project_github_2, .project_fontend_2, .project_tool_2, .project_url_2 {
+  /* div4 */
+  .slider2 img {
+    width: 300px;
+  }
+  .project_kinou_2, .project_github_2, .project_fontend_2, .project_Backend_2, .project_api_2, .project_Database_2, .project_tool_2, .project_url_2 {
     display: block;
     width: 100%;
   }
@@ -407,6 +395,19 @@ html,body,footer {
     width: 85%;
     margin-top: 30px;
   }
+  /* div4 */
+  .slider2 img {
+    width: 300px;
+    height: 200px !important;
+  }
+  #div4 {
+    padding-bottom: 30px;
+  }
+  #div4 > div {
+    padding: 1rem 1rem;
+    width: 85%;
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width:380px) {
   /* div2 */
@@ -425,6 +426,15 @@ html,body,footer {
     width: 250px !important;
     height: 200px !important;
   }
+  
+  /* div4 */
+  #div4_title {
+    font-size: 1.9rem;
+  }
+  .slider2 img {
+    width: 250px !important;
+    height: 200px !important;
+  }
 }
 @media screen and (max-width:320px) {
   /* div2 */
@@ -436,6 +446,12 @@ html,body,footer {
   }
   /* div3 */
   .slider img {
+    width: 250px !important;
+    height: 200px !important;
+  }
+
+  /* div4 */
+  .slider2 img {
     width: 250px !important;
     height: 200px !important;
   }
