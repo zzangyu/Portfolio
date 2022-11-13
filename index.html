@@ -75,12 +75,26 @@
     <div id="wrap">
       <!-- header -->
       <div class="header">
-          <button onclick="fnMove('1')">HOME</button>
-          <button onclick="fnMove('2')">ABOUT ME</button>
-          <button onclick="fnMove('3')">1st PROJECT</button>
-          <button onclick="fnMove('4')">2nd PROJECT</button>
-          <button onclick="fnMove('5')">3rd PROJECT</button>
+          <div id="header_title">ポートフォリオ</div>
+          <div id="header_bt">
+            <button onclick="fnMove('1')">HOME</button>
+            <button onclick="fnMove('2')">ABOUT ME</button>
+            <button onclick="fnMove('3')">PROJECT</button>
+          </div>
       </div>
+      <nav role="navigation" id="burger">
+        <div id="menuToggle">
+          <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a onclick="fnMove('1')"><li>Home</li></a>
+            <a onclick="fnMove('2')"><li>About Me</li></a>
+            <a onclick="fnMove('3')"><li>PROJECT</li></a>
+          </ul>
+        </div>
+      </nav>
       <!-- home -->
       <div id="div1" class="contents">
         <div class="typing-txt">
@@ -373,6 +387,17 @@
                 <div class="project_tool_1">✔&nbsp;&nbsp;Tool</div>
                 <div class="project_tool_2">Visual Studio Code</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="footer_1">Thank you for Coming !</div>
+        <div id="footer_2">
+          <div id="footer_2_text">© 2022. hanzzan. All rights reserved.</div>
+          <div id="footer_2_1">
+            <div>
+              <i class="fa-sharp fa-solid fa-chevron-up fa-4x" onclick="fnMove('1')"></i>
             </div>
           </div>
         </div>
