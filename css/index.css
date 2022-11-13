@@ -574,7 +574,7 @@ html,body,footer {
   #div2 {
     height: 170% !important; 
     justify-content: none;
-    padding-bottom: 30px;
+    padding-bottom: 30px !important;
   }
   #div1_bt {
     position: absolute;
@@ -644,6 +644,9 @@ html,body,footer {
   }
   #wrap #div2 .wrap {
     padding: 0 2% 10% 1%;
+  }
+  #wrap #div2 h3 {
+    margin-bottom: 30px;
   }
   /* div3 */
   #div3_title {
